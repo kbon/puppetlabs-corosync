@@ -51,9 +51,6 @@ module Puppet
       defaultto 'INFINITY'
     end
 
-    autorequire(:cs_shadow) do
-      [ @parameters[:cib] ]
-    end
     newproperty(:symmetrical) do
       desc "Boolean specifying if the resources should stop in reverse order.
         Default value: true."
